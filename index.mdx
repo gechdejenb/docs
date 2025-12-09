@@ -1,97 +1,84 @@
 ---
-title: "Introduction"
-description: "Welcome to the new home for your documentation"
+title: "SkipSetup Documentation"
+description: "Build full-stack applications that are appropriately scaled from the outset. Select between small or medium scale to obtain a production-ready stack."
 ---
 
-## Setting up
+## What is SkipSetup?
 
-Get your documentation site up and running in minutes.
+SkipSetup is a CLI tool that generates production-ready full-stack applications with the right architecture from day one. Choose between **small** (MVP/prototype) or **medium** (SaaS-ready) scales and get a complete stack with authentication, database integration, and deployment configurations.
 
 <Card
-  title="Start here"
+  title="Quick Start"
   icon="rocket"
-  href="/quickstart"
+  href="/quick-start/installation"
   horizontal
 >
-  Follow our three step quickstart guide.
+  Get your project up and running in minutes with our installation guide.
 </Card>
 
-## Make it yours
+## Choose Your Scale
 
-Design a docs site that looks great and empowers your users.
+Select the perfect starting point for your project based on your needs.
 
 <Columns cols={2}>
   <Card
-    title="Edit locally"
-    icon="pen-to-square"
-    href="/development"
+    title="Small Projects"
+    icon="cube"
+    href="/scales/small/overview"
   >
-    Edit your docs locally and preview them in real time.
+    Perfect for MVPs, prototypes, and weekend projects. Includes auth, basic database, and email verification.
   </Card>
   <Card
-    title="Customize your site"
-    icon="palette"
-    href="/essentials/settings"
+    title="Medium Projects"
+    icon="cubes"
+    href="/scales/medium/overview"
   >
-    Customize the design and colors of your site to match your brand.
-  </Card>
-    <Card
-    title="Set up navigation"
-    icon="map"
-    href="/essentials/navigation"
-  >
-    Organize your docs to help users find what they need and succeed with your product.
-  </Card>
-  <Card
-    title="API documentation"
-    icon="terminal"
-    href="/api-reference/introduction"
-  >
-    Auto-generate API documentation from OpenAPI specifications.
+    SaaS-ready with admin panels, monitoring, Stripe payments, and advanced features.
   </Card>
 </Columns>
 
-## Create beautiful pages
+## Core Features
 
-Everything you need to create world-class documentation.
+SkipSetup comes with everything you need to start building immediately.
 
 <Columns cols={2}>
   <Card
-    title="Write with MDX"
-    icon="pen-fancy"
-    href="/essentials/markdown"
+    title="Authentication"
+    icon="lock"
+    href="/features/auth/overview"
   >
-    Use MDX to style your docs pages.
+    Production-ready auth with email/password, OTP, and role-based access control.
   </Card>
   <Card
-    title="Code samples"
-    icon="code"
-    href="/essentials/code"
+    title="Database"
+    icon="database"
+    href="/features/database/overview"
   >
-    Add sample code to demonstrate how to use your product.
+    Prisma setup with optimized schemas for your chosen scale.
   </Card>
   <Card
-    title="Images"
-    icon="image"
-    href="/essentials/images"
+    title="Modules"
+    icon="puzzle-piece"
+    href="/features/modules/overview"
   >
-    Display images and other media.
+    Plug-and-play modules for admin panels, payments, monitoring, and more.
   </Card>
   <Card
-    title="Reusable snippets"
-    icon="recycle"
-    href="/essentials/reusable-snippets"
+    title="AI Development"
+    icon="robot"
+    href="/ai/overview"
   >
-    Write once and reuse across your docs.
+    Pre-configured Kiro agents for project-aware AI assistance.
   </Card>
 </Columns>
 
-## Need inspiration?
+## Start Building
 
-<Card
-  title="See complete examples"
-  icon="stars"
-  href="https://mintlify.com/customers"
->
-  Browse our showcase of exceptional documentation sites.
-</Card>
+Create your project with a single command:
+
+```bash
+# For small projects (MVP/Prototype)
+npx skipsetup-cli@latest create my-mvp --size small
+
+# For medium projects (SaaS-ready)
+npx skipsetup-cli@latest create my-saas --size medium

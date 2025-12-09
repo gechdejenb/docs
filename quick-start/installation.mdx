@@ -1,0 +1,68 @@
+---
+title: "Installation"
+description: "Get started with SkipSetup in minutes. No installation required - run directly with npx."
+---
+
+# Installation Guide
+
+SkipSetup requires no installation and can be run directly using npx. This guide will walk you through the prerequisites and get you started with your first project.
+
+## Prerequisites
+
+Before using SkipSetup, ensure you have the following installed:
+
+### Required Software
+
+<Table>
+  <thead>
+    <tr>
+      <th>Software</th>
+      <th>Version</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Node.js</strong></td>
+      <td>18.x or higher</td>
+      <td>JavaScript runtime</td>
+    </tr>
+    <tr>
+      <td><strong>pnpm</strong> (recommended)</td>
+      <td>8.x or higher</td>
+      <td>Package manager</td>
+    </tr>
+    <tr>
+      <td><strong>npm</strong> (alternative)</td>
+      <td>9.x or higher</td>
+      <td>Package manager</td>
+    </tr>
+    <tr>
+      <td><strong>Git</strong></td>
+      <td>2.x or higher</td>
+      <td>Version control</td>
+    </tr>
+  </tbody>
+</Table>
+
+### Optional but Recommended
+
+<Columns cols={2}>
+  <Card
+    title="Database"
+    description="PostgreSQL (recommended) or SQLite for development"
+    href="https://www.postgresql.org/download/"
+  />
+  <Card
+    title="Prisma"
+    description="With TypeScript and Prisma extensions"
+    href="https://www.prisma.io/"
+  />
+</Columns>
+
+## Quick Installation
+
+SkipSetup doesn't require installation. Run it directly with npx:
+
+```bash
+npx skipsetup-cli@latest create my-app --size small

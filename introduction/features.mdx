@@ -1,0 +1,565 @@
+---
+title: "Features Overview"
+description: "SkipSetup comes with everything you need to build and deploy production-ready applications. See all included features for both project scales."
+---
+
+# Features Overview
+
+SkipSetup provides a comprehensive set of features tailored to your project's scale. Every feature is production-ready, tested, and integrated from day one.
+
+## Core Features Comparison
+
+<Table>
+  <thead>
+    <tr>
+      <th>Feature Category</th>
+      <th>Small Scale Projects</th>
+      <th>Medium Scale Projects</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Authentication</strong></td>
+      <td>Email/password + OTP verification</td>
+      <td>Better Auth with RBAC, multi-factor</td>
+    </tr>
+    <tr>
+      <td><strong>Database</strong></td>
+      <td>Basic Prisma setup with users/sessions</td>
+      <td>Full SaaS schema with relationships</td>
+    </tr>
+    <tr>
+      <td><strong>Frontend Framework</strong></td>
+      <td>Next.js 15 (App Router), TypeScript</td>
+      <td>Next.js 15 (App Router), TypeScript</td>
+    </tr>
+    <tr>
+      <td><strong>Styling</strong></td>
+      <td>Tailwind CSS, responsive design</td>
+      <td>Tailwind CSS, component library</td>
+    </tr>
+    <tr>
+      <td><strong>Email</strong></td>
+      <td>Resend for email verification</td>
+      <td>Email templates & workflows</td>
+    </tr>
+    <tr>
+      <td><strong>Payments</strong></td>
+      <td>-</td>
+      <td>Full Stripe SaaS billing</td>
+    </tr>
+    <tr>
+      <td><strong>Admin Dashboard</strong></td>
+      <td>-</td>
+      <td>Complete admin panel</td>
+    </tr>
+    <tr>
+      <td><strong>Monitoring</strong></td>
+      <td>-</td>
+      <td>Analytics & monitoring dashboard</td>
+    </tr>
+    <tr>
+      <td><strong>API</strong></td>
+      <td>tRPC + REST API routes</td>
+      <td>tRPC + REST + rate limiting</td>
+    </tr>
+    <tr>
+      <td><strong>AI Development</strong></td>
+      <td>Basic Kiro context</td>
+      <td>Complete Kiro AI-native system</td>
+    </tr>
+  </tbody>
+</Table>
+
+## Authentication Features
+
+### Small Scale Authentication
+<Columns cols={2}>
+  <Card icon="envelope">
+    <strong>Email/Password Login</strong>
+    <p>Secure email and password authentication with proper validation and error handling.</p>
+  </Card>
+  <Card icon="key">
+    <strong>OTP Verification</strong>
+    <p>One-time password system for email verification and password reset flows.</p>
+  </Card>
+</Columns>
+
+<Columns cols={2}>
+  <Card icon="shield">
+    <strong>Basic Sessions</strong>
+    <p>Secure session management with proper cookie handling and CSRF protection.</p>
+  </Card>
+  <Card icon="user-check">
+    <strong>Email Confirmation</strong>
+    <p>Email verification flow with Resend integration for deliverability.</p>
+  </Card>
+</Columns>
+
+### Medium Scale Authentication
+<Columns cols={2}>
+  <Card icon="user-shield">
+    <strong>Better Auth Integration</strong>
+    <p>Advanced authentication with social logins, passkeys, and security features.</p>
+  </Card>
+  <Card icon="users-cog">
+    <strong>Role-Based Access Control</strong>
+    <p>Define user roles and permissions for fine-grained access control.</p>
+  </Card>
+</Columns>
+
+<Columns cols={2}>
+  <Card icon="fingerprint">
+    <strong>Multi-Factor Authentication</strong>
+    <p>Optional MFA with TOTP and backup codes for enhanced security.</p>
+  </Card>
+  <Card icon="history">
+    <strong>Session Management</strong>
+    <p>View and manage active sessions, with device tracking and revoke capabilities.</p>
+  </Card>
+</Columns>
+
+## Database Features
+
+### Small Scale Database
+<Columns cols={2}>
+  <Card icon="database">
+    <strong>Basic Schema</strong>
+    <p>Users, sessions, and essential tables with proper relationships.</p>
+  </Card>
+  <Card icon="sync">
+    <strong>Prisma ORM</strong>
+    <p>Type-safe database access with migrations and seed capabilities.</p>
+  </Card>
+</Columns>
+
+### Medium Scale Database
+<Columns cols={2}>
+  <Card icon="project-diagram">
+    <strong>Full SaaS Schema</strong>
+    <p>Users, teams, subscriptions, invoices, and audit logs with proper relationships.</p>
+  </Card>
+  <Card icon="chart-line">
+    <strong>Analytics Tables</strong>
+    <p>Built-in analytics tracking for user behavior and system metrics.</p>
+  </Card>
+</Columns>
+
+<Columns cols={2}>
+  <Card icon="file-invoice">
+    <strong>Audit Logs</strong>
+    <p>Track all important actions with timestamp, user, and IP logging.</p>
+  </Card>
+  <Card icon="backup">
+    <strong>Soft Deletes</strong>
+    <p>Data retention with soft delete patterns for compliance and recovery.</p>
+  </Card>
+</Columns>
+
+## Frontend Features
+
+### Both Scales Include:
+<Columns cols={3}>
+  <Card icon="react">
+    <strong>Next.js 15</strong>
+    <p>Latest App Router with server components and optimized rendering.</p>
+  </Card>
+  <Card icon="typescript">
+    <strong>TypeScript</strong>
+    <p>Full type safety with strict configuration and type checking.</p>
+  </Card>
+  <Card icon="palette">
+    <strong>Tailwind CSS</strong>
+    <p>Utility-first CSS framework with custom design system.</p>
+  </Card>
+</Columns>
+
+<Columns cols={3}>
+  <Card icon="mobile">
+    <strong>Responsive Design</strong>
+    <p>Mobile-first responsive layouts that work on all devices.</p>
+  </Card>
+  <Card icon="lightning">
+    <strong>Performance Optimized</strong>
+    <p>Code splitting, image optimization, and performance best practices.</p>
+  </Card>
+  <Card icon="accessibility">
+    <strong>Accessibility</strong>
+    <p>ARIA labels, keyboard navigation, and screen reader support.</p>
+  </Card>
+</Columns>
+
+### Medium Scale Exclusive:
+<Columns cols={2}>
+  <Card icon="tachometer-alt">
+    <strong>Admin Dashboard</strong>
+    <p>Complete admin interface for user management, analytics, and system control.</p>
+  </Card>
+  <Card icon="chart-bar">
+    <strong>Monitoring Dashboard</strong>
+    <p>Real-time analytics with charts, metrics, and performance monitoring.</p>
+  </Card>
+</Columns>
+
+## Backend & API Features
+
+### Both Scales Include:
+<Columns cols={3}>
+  <Card icon="server">
+    <strong>tRPC Setup</strong>
+    <p>End-to-end type-safe API with React Query integration.</p>
+  </Card>
+  <Card icon="route">
+    <strong>API Routes</strong>
+    <p>RESTful API endpoints with proper error handling and validation.</p>
+  </Card>
+  <Card icon="shield-alt">
+    <strong>Security Middleware</strong>
+    <p>CORS, rate limiting, and security headers configured.</p>
+  </Card>
+</Columns>
+
+### Medium Scale Exclusive:
+<Columns cols={2}>
+  <Card icon="credit-card">
+    <strong>Stripe Integration</strong>
+    <p>Complete payment system with subscriptions, invoices, and webhooks.</p>
+  </Card>
+  <Card icon="envelope-open-text">
+    <strong>Email Workflows</strong>
+    <p>Transactional email system with templates and scheduling.</p>
+  </Card>
+</Columns>
+
+## AI-Native Development Features
+
+### Complete Kiro AI Context System
+Every SkipSetup project includes a comprehensive `.kiro` folder that transforms AI assistants into project-aware experts.
+
+<Columns cols={2}>
+  <Card icon="users">
+    <strong>Pre-configured AI Agents</strong>
+    <p>Specialized AI assistants in <code>.kiro/agents/</code>:</p>
+    <ul>
+      <li><strong>auth-expert</strong> - Authentication & security</li>
+      <li><strong>database-architect</strong> - Schema design & optimization</li>
+      <li><strong>fullstack-specialist</strong> - End-to-end features</li>
+      <li><strong>ui-specialist</strong> - Components & design system</li>
+      <li><strong>payment-integrator</strong> - Stripe payments & billing</li>
+    </ul>
+  </Card>
+  <Card icon="file-code">
+    <strong>Project Specifications</strong>
+    <p>Detailed documentation in <code>.kiro/specs/</code>:</p>
+    <ul>
+      <li><strong>API Specifications</strong> - Endpoints & patterns</li>
+      <li><strong>Auth Specifications</strong> - Security flows & rules</li>
+      <li><strong>Database Specifications</strong> - Schema & relationships</li>
+      <li><strong>Component Specifications</strong> - Design patterns</li>
+      <li><strong>Security Specifications</strong> - Policies & practices</li>
+    </ul>
+  </Card>
+</Columns>
+
+<Columns cols={2}>
+  <Card icon="steering">
+    <strong>Architecture Steering</strong>
+    <p>High-level guidance in <code>.kiro/steering/</code>:</p>
+    <ul>
+      <li><strong>Project Blueprint</strong> - Vision & roadmap</li>
+      <li><strong>Architecture Documentation</strong> - Technical design</li>
+      <li><strong>Development Workflows</strong> - Team practices</li>
+      <li><strong>Plugin Intelligence</strong> - Extension patterns</li>
+      <li><strong>Master Index</strong> - Central context index</li>
+    </ul>
+  </Card>
+  <Card icon="integration">
+    <strong>Development Automation</strong>
+    <p>Tools in <code>.kiro/hooks/</code> and <code>.kiro/mcp/</code>:</p>
+    <ul>
+      <li><strong>Pre-commit Hooks</strong> - Validate changes & update context</li>
+      <li><strong>Post-generation Hooks</strong> - Verify AI-generated code</li>
+      <li><strong>MCP Configuration</strong> - AI tool integration setup</li>
+    </ul>
+  </Card>
+</Columns>
+
+### AI Development Benefits
+<Columns cols={3}>
+  <Card icon="brain">
+    <strong>Zero Hallucinations</strong>
+    <p>AI understands your project perfectly, eliminating guesswork and broken code.</p>
+  </Card>
+  <Card icon="rocket">
+    <strong>10x Faster Development</strong>
+    <p>Add features with perfect integration on the first try.</p>
+  </Card>
+  <Card icon="users">
+    <strong>Project-Aware Experts</strong>
+    <p>Specialized agents with deep knowledge of your architecture.</p>
+  </Card>
+</Columns>
+
+## Development Experience Features
+
+### Both Scales Include:
+<Columns cols={3}>
+  <Card icon="code">
+    <strong>Development Scripts</strong>
+    <p>Complete set of scripts for dev, build, test, and database management.</p>
+  </Card>
+  <Card icon="cogs">
+    <strong>Zero Configuration</strong>
+    <p>Everything works out of the box with sensible defaults.</p>
+  </Card>
+  <Card icon="terminal">
+    <strong>CLI Integration</strong>
+    <p>Command-line tools for project management and generation.</p>
+  </Card>
+</Columns>
+
+## Deployment & Infrastructure Features
+
+### Both Scales Include:
+<Columns cols={3}>
+  <Card icon="cloud">
+    <strong>Vercel Ready</strong>
+    <p>Pre-configured for Vercel deployment with optimal settings.</p>
+  </Card>
+  <Card icon="docker">
+    <strong>Docker Support</strong>
+    <p>Dockerfile and docker-compose for containerized deployment.</p>
+  </Card>
+  <Card icon="github">
+    <strong>CI/CD Setup</strong>
+    <p>GitHub Actions workflows for testing and deployment.</p>
+  </Card>
+</Columns>
+
+<Columns cols={3}>
+  <Card icon="envira">
+    <strong>Environment Management</strong>
+    <p>.env.example template with all required variables documented.</p>
+  </Card>
+  <Card icon="wrench">
+    <strong>Build Optimization</strong>
+    <p>Optimized build process with bundle analysis and compression.</p>
+  </Card>
+  <Card icon="bell">
+    <strong>Error Tracking</strong>
+    <p>Integrated error tracking setup (Sentry compatible).</p>
+  </Card>
+</Columns>
+
+## Security Features
+
+### Both Scales Include:
+<Columns cols={3}>
+  <Card icon="lock">
+    <strong>Secure by Default</strong>
+    <p>Security headers, CSRF protection, and input validation.</p>
+  </Card>
+  <Card icon="user-secret">
+    <strong>Password Security</strong>
+    <p>Bcrypt hashing with proper salt rounds and validation.</p>
+  </Card>
+  <Card icon="shield-check">
+    <strong>Session Security</strong>
+    <p>Secure cookies, session rotation, and proper expiration.</p>
+  </Card>
+</Columns>
+
+### Medium Scale Exclusive:
+<Columns cols={2}>
+  <Card icon="user-lock">
+    <strong>Advanced RBAC</strong>
+    <p>Role hierarchies, permission inheritance, and audit logging.</p>
+  </Card>
+  <Card icon="history">
+    <strong>Audit Trail</strong>
+    <p>Complete audit logging for security compliance and debugging.</p>
+  </Card>
+</Columns>
+
+## Testing & Quality Features
+
+<Columns cols={3}>
+  <Card icon="vial">
+    <strong>Testing Setup</strong>
+    <p>Vitest configuration with testing library and examples.</p>
+  </Card>
+  <Card icon="check-double">
+    <strong>Type Checking</strong>
+    <p>Strict TypeScript configuration with no implicit any.</p>
+  </Card>
+  <Card icon="ruler">
+    <strong>Code Quality</strong>
+    <p>ESLint, Prettier, and Husky pre-configured.</p>
+  </Card>
+</Columns>
+
+<Columns cols={2}>
+  <Card icon="search">
+    <strong>Accessibility Testing</strong>
+    <p>Setup for automated accessibility testing and validation.</p>
+  </Card>
+  <Card icon="performance">
+    <strong>Performance Testing</strong>
+    <p>Lighthouse configuration and performance monitoring setup.</p>
+  </Card>
+</Columns>
+
+## Email & Notification Features
+
+### Small Scale:
+<Card icon="paper-plane">
+  <strong>Resend Integration</strong>
+  <p>Email verification, password reset, and basic notifications via Resend.</p>
+</Card>
+
+### Medium Scale:
+<Columns cols={2}>
+  <Card icon="envelope-open">
+    <strong>Email Templates</strong>
+    <p>Beautiful, responsive email templates with React Email.</p>
+  </Card>
+  <Card icon="tasks">
+    <strong>Email Workflows</strong>
+    <p>Welcome sequences, notifications, and scheduled emails.</p>
+  </Card>
+</Columns>
+
+## Plugin System Features
+
+<Columns cols={2}>
+  <Card icon="puzzle-piece">
+    <strong>plugin-small</strong>
+    <ul>
+      <li>Minimal authentication</li>
+      <li>Basic database setup</li>
+      <li>Essential email features</li>
+      <li>Core development tools</li>
+      <li>Basic Kiro context</li>
+    </ul>
+  </Card>
+  <Card icon="puzzle-piece">
+    <strong>plugin-medium</strong>
+    <ul>
+      <li>Advanced authentication</li>
+      <li>Admin interface</li>
+      <li>Monitoring & analytics</li>
+      <li>Stripe payments</li>
+      <li>Email workflows</li>
+      <li>Enhanced security</li>
+      <li>Complete Kiro AI system</li>
+    </ul>
+  </Card>
+</Columns>
+
+## Complete Feature Matrix
+
+<Table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Small Scale</th>
+      <th>Medium Scale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Authentication System</strong></td>
+      <td>✓ Basic</td>
+      <td>✓ Advanced</td>
+    </tr>
+    <tr>
+      <td><strong>Database Schema</strong></td>
+      <td>✓ Basic</td>
+      <td>✓ Full SaaS</td>
+    </tr>
+    <tr>
+      <td><strong>Admin Dashboard</strong></td>
+      <td>✗</td>
+      <td>✓ Complete</td>
+    </tr>
+    <tr>
+      <td><strong>Stripe Payments</strong></td>
+      <td>✗</td>
+      <td>✓ Full Integration</td>
+    </tr>
+    <tr>
+      <td><strong>Email System</strong></td>
+      <td>✓ Basic</td>
+      <td>✓ Advanced</td>
+    </tr>
+    <tr>
+      <td><strong>Monitoring Dashboard</strong></td>
+      <td>✗</td>
+      <td>✓ Analytics</td>
+    </tr>
+    <tr>
+      <td><strong>Kiro AI Agents</strong></td>
+      <td>✓ Basic</td>
+      <td>✓ Complete System</td>
+    </tr>
+    <tr>
+      <td><strong>Project Specifications</strong></td>
+      <td>✓ Basic</td>
+      <td>✓ Comprehensive</td>
+    </tr>
+    <tr>
+      <td><strong>Architecture Steering</strong></td>
+      <td>✓ Basic</td>
+      <td>✓ Complete</td>
+    </tr>
+    <tr>
+      <td><strong>Development Hooks</strong></td>
+      <td>✓ Basic</td>
+      <td>✓ Advanced</td>
+    </tr>
+    <tr>
+      <td><strong>MCP Integration</strong></td>
+      <td>✓ Basic</td>
+      <td>✓ Complete</td>
+    </tr>
+    <tr>
+      <td><strong>API Rate Limiting</strong></td>
+      <td>✗</td>
+      <td>✓ Configured</td>
+    </tr>
+    <tr>
+      <td><strong>Audit Logging</strong></td>
+      <td>✗</td>
+      <td>✓ Complete</td>
+    </tr>
+    <tr>
+      <td><strong>Multi-Factor Auth</strong></td>
+      <td>✗</td>
+      <td>✓ Optional</td>
+    </tr>
+    <tr>
+      <td><strong>Role-Based Access</strong></td>
+      <td>✗</td>
+      <td>✓ Full RBAC</td>
+    </tr>
+    <tr>
+      <td><strong>Deployment Configs</strong></td>
+      <td>✓ Basic</td>
+      <td>✓ Advanced</td>
+    </tr>
+  </tbody>
+</Table>
+
+## Ready to Get These Features?
+
+<Card
+  title="Create Your Project Now"
+  description="Get all these features in your project in under 90 seconds"
+  href="/quick-start/installation"
+  icon="rocket"
+  horizontal
+/>
+
+<Note type="info">
+  <strong>All features are production-ready:</strong> Every feature included in SkipSetup has been tested, optimized, and used in real production applications.
+</Note>

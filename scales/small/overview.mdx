@@ -1,0 +1,200 @@
+---
+title: "Small Scale Projects Overview"
+description: "SkipSetup's small scale is perfect for MVPs, prototypes, and weekend projects. Get a production-ready foundation with authentication, database, and email features."
+---
+
+# Small Scale Projects Overview
+
+The **small scale** is SkipSetup's streamlined option for rapid development of prototypes, MVPs, and weekend projects. It provides the essential foundation you need to start building immediately, without unnecessary complexity.
+
+## What is Small Scale?
+
+Small scale projects are **minimal viable architectures** that include everything you need to validate ideas quickly, but nothing more. Perfect for when you need to move fast and prove concepts without investing in full-scale infrastructure.
+
+<Card icon="rocket">
+  <strong>Philosophy:</strong> Provide the minimum viable architecture that enables rapid development while maintaining production readiness for the scale you need.
+</Card>
+
+## Ideal Use Cases
+
+<Columns cols={3}>
+  <Card icon="flask">
+    <strong>Prototypes</strong>
+    <p>Quick proof-of-concepts and experimental projects to test ideas.</p>
+  </Card>
+  <Card icon="weekend">
+    <strong>Weekend Projects</strong>
+    <p>Side projects, hackathon entries, and personal experiments.</p>
+  </Card>
+  <Card icon="mvp">
+    <strong>Simple MVPs</strong>
+    <p>Minimum viable products to validate market interest.</p>
+  </Card>
+</Columns>
+
+<Columns cols={2}>
+  <Card icon="education">
+    <strong>Learning Projects</strong>
+    <p>Educational projects to learn modern full-stack development patterns.</p>
+  </Card>
+  <Card icon="tools">
+    <strong>Internal Tools</strong>
+    <p>Simple internal dashboards and tools for small teams.</p>
+  </Card>
+</Columns>
+
+## Core Configuration
+
+<Table>
+  <thead>
+    <tr>
+      <th>Aspect</th>
+      <th>Small Scale Setting</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Profile</strong></td>
+      <td>SMALL</td>
+    </tr>
+    <tr>
+      <td><strong>Description</strong></td>
+      <td>Minimal MVP: Auth + DB basics</td>
+    </tr>
+    <tr>
+      <td><strong>Modules</strong></td>
+      <td><code>[auth] [db] [email-resend]</code></td>
+    </tr>
+    <tr>
+      <td><strong>Plugins</strong></td>
+      <td><code>[small]</code></td>
+    </tr>
+    <tr>
+      <td><strong>Infrastructure</strong></td>
+      <td><code>[postgres]</code> (SQLite for development)</td>
+    </tr>
+    <tr>
+      <td><strong>Development Time</strong></td>
+      <td>Project generated in under 60 seconds</td>
+    </tr>
+  </tbody>
+</Table>
+
+## Technology Stack
+
+### Frontend
+<Columns cols={2}>
+  <Card icon="nextjs">
+    <strong>Next.js 15</strong>
+    <p>Latest App Router with server components, optimized rendering, and built-in API routes.</p>
+  </Card>
+  <Card icon="typescript">
+    <strong>TypeScript</strong>
+    <p>Full type safety with strict configuration and comprehensive type checking.</p>
+  </Card>
+</Columns>
+
+<Columns cols={2}>
+  <Card icon="tailwind">
+    <strong>Tailwind CSS</strong>
+    <p>Utility-first CSS framework for rapid UI development with responsive design.</p>
+  </Card>
+  <Card icon="react-query">
+    <strong>tRPC + React Query</strong>
+    <p>End-to-end type-safe API calls with automatic caching and synchronization.</p>
+  </Card>
+</Columns>
+
+### Backend & Database
+<Columns cols={2}>
+  <Card icon="prisma">
+    <strong>Prisma ORM</strong>
+    <p>Type-safe database access with migrations, seeding, and an intuitive query API.</p>
+  </Card>
+  <Card icon="database">
+    <strong>PostgreSQL / SQLite</strong>
+    <p>PostgreSQL for production, SQLite for local development. Easy switching between environments.</p>
+  </Card>
+</Columns>
+
+## Included Features
+
+### Authentication & Security
+<Columns cols={2}>
+  <div>
+  <h4> Email/Password Authentication</h4>
+  <ul>
+    <li>Secure login and registration flows</li>
+    <li>Password hashing with bcrypt</li>
+    <li>Form validation and error handling</li>
+    <li>Protected route middleware</li>
+  </ul>
+  </div>
+  <div>
+  <h4> Email Verification</h4>
+  <ul>
+    <li>One-time password (OTP) system</li>
+    <li>Resend integration for deliverability</li>
+    <li>Email template for verification</li>
+    <li>Password reset flows</li>
+  </ul>
+  </div>
+</Columns>
+
+### Database & Data Management
+<Columns cols={2}>
+  <div>
+  <h4> Basic Schema</h4>
+  <ul>
+    <li>User model with profiles</li>
+    <li>Session management</li>
+    <li>Email verification tokens</li>
+    <li>Proper relationships and constraints</li>
+  </ul>
+  </div>
+  <div>
+  <h4> Database Operations</h4>
+  <ul>
+    <li>Prisma migrations ready</li>
+    <li>Seed data scripts</li>
+    <li>Database studio for management</li>
+    <li>Environment-specific configurations</li>
+  </ul>
+  </div>
+</Columns>
+
+### User Interface
+<Columns cols={2}>
+  <div>
+  <h4> Responsive Design</h4>
+  <ul>
+    <li>Mobile-first responsive layouts</li>
+    <li>Dark/light mode support</li>
+    <li>Accessibility compliant components</li>
+    <li>Consistent design system</li>
+  </ul>
+  </div>
+  <div>
+  <h4>📱 Core Components</h4>
+  <ul>
+    <li>Authentication pages (login, register)</li>
+    <li>User dashboard template</li>
+    <li>Email verification flows</li>
+    <li>Navigation and layout components</li>
+  </ul>
+  </div>
+</Columns>
+
+### AI Development Context
+<Card icon="kiro">
+  <strong>Basic Kiro AI Integration</strong>
+  <p>Even small projects include essential AI context to accelerate development:</p>
+  <ul>
+    <li>Basic project specifications</li>
+    <li>Core architecture documentation</li>
+    <li>Essential development workflows</li>
+    <li>Context for AI-assisted coding</li>
+  </ul>
+</Card>
+
+## Generated Project Structure

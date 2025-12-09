@@ -2,7 +2,6 @@
 title: "Medium Scale Projects Overview"
 description: "SkipSetup's medium scale is designed for SaaS products, startups, and businesses. Get a complete production-ready stack with admin panels, payments, monitoring, and advanced features."
 ---
-
 # Medium Scale Projects Overview
 
 The **medium scale** is SkipSetup's comprehensive solution for building production-ready SaaS applications, startup platforms, and business tools. It includes everything you need to launch, scale, and manage a successful product from day one.
@@ -171,7 +170,7 @@ Medium scale projects are **complete SaaS architectures** that include advanced 
   </ul>
   </div>
   <div>
-  <h4>Advanced Database Features</h4>
+  <h4> Advanced Database Features</h4>
   <ul>
     <li>Soft deletes and data retention</li>
     <li>Complex relationships and constraints</li>
@@ -184,7 +183,7 @@ Medium scale projects are **complete SaaS architectures** that include advanced 
 
 ### Payment Processing
 <Card icon="credit-card">
-  <strong>Complete Stripe Integration</strong>
+  <strong> Complete Stripe Integration</strong>
   <ul>
     <li>Subscription management with multiple plans</li>
     <li>One-time payments and invoicing</li>
@@ -199,7 +198,7 @@ Medium scale projects are **complete SaaS architectures** that include advanced 
 ### Admin & Monitoring
 <Columns cols={2}>
   <div>
-  <h4>Admin Dashboard</h4>
+  <h4> Admin Dashboard</h4>
   <ul>
     <li>User management and moderation</li>
     <li>Subscription and billing oversight</li>
@@ -209,7 +208,7 @@ Medium scale projects are **complete SaaS architectures** that include advanced 
   </ul>
   </div>
   <div>
-  <h4>Monitoring Dashboard</h4>
+  <h4> Monitoring Dashboard</h4>
   <ul>
     <li>Real-time analytics and metrics</li>
     <li>User activity and engagement tracking</li>
@@ -273,3 +272,220 @@ Medium scale projects are **complete SaaS architectures** that include advanced 
 </Card>
 
 ## Generated Project Structure
+
+```
+your-saas-project/
+├── src/
+│   ├── app/
+│   │   ├── (auth)/           # Authentication flows
+│   │   ├── (protected)/      # User dashboard & features
+│   │   ├── admin/            # Admin dashboard
+│   │   ├── api/              # API routes (REST + tRPC)
+│   │   └── dashboard/        # User analytics dashboard
+│   ├── server/
+│   │   ├── api/              # tRPC routers & procedures
+│   │   ├── auth/             # Better Auth configuration
+│   │   ├── db/               # Database client & utilities
+│   │   ├── email/            # Email templates & workflows
+│   │   ├── stripe/           # Payment processing
+│   │   └── utils/            # Server utilities
+│   ├── components/           # Reusable UI components
+│   ├── lib/                  # Shared libraries
+│   └── types/                # TypeScript definitions
+├── prisma/
+│   ├── schema.prisma         # Complete SaaS schema
+│   ├── migrations/           # Database migrations
+│   └── seed.ts              # Production seed data
+├── .kiro/                   # Complete AI context system
+│   ├── agents/              # Specialized AI assistants
+│   ├── specs/               # Project specifications
+│   ├── steering/            # Architecture documentation
+│   ├── hooks/               # Development automation
+│   └── mcp/                 # AI tool integration
+├── public/                  # Static assets
+├── .env.example            # Complete environment setup
+├── docker-compose.yml      # Container orchestration
+├── vercel.json             # Deployment configuration
+└── package.json            # Production dependencies
+```
+
+## Quick Start Example
+
+```bash
+# Create your SaaS project
+npx skipsetup-cli@latest create my-saas-platform --size medium
+
+# Navigate to project
+cd my-saas-platform
+
+# Install dependencies
+pnpm install
+
+# Set up environment variables
+cp .env.example .env
+# Edit .env with your Stripe, database, and auth keys
+
+# Set up database
+pnpm db:push
+pnpm db:seed
+
+# Start development
+pnpm dev
+
+# Access admin dashboard at /admin
+```
+
+## Development Commands
+
+<Table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Purpose</th>
+      <th>Usage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>pnpm dev</code></td>
+      <td>Start full development environment</td>
+      <td>Daily development</td>
+    </tr>
+    <tr>
+      <td><code>pnpm dev:admin</code></td>
+      <td>Start admin panel development</td>
+      <td>Admin feature work</td>
+    </tr>
+    <tr>
+      <td><code>pnpm stripe:sync</code></td>
+      <td>Sync Stripe products and plans</td>
+      <td>Payment setup</td>
+    </tr>
+    <tr>
+      <td><code>pnpm db:migrate</code></td>
+      <td>Create and run database migrations</td>
+      <td>Schema changes</td>
+    </tr>
+    <tr>
+      <td><code>pnpm build</code></td>
+      <td>Build for production with optimization</td>
+      <td>Deployment preparation</td>
+    </tr>
+    <tr>
+      <td><code>pnpm test</code></td>
+      <td>Run complete test suite</td>
+      <td>Quality assurance</td>
+    </tr>
+  </tbody>
+</Table>
+
+## When to Choose Medium Scale
+
+<Columns cols={2}>
+  <Card icon="check">
+    <strong>Choose Medium Scale When:</strong>
+    <ul>
+      <li>You're building a revenue-generating product</li>
+      <li>Payment processing is required from launch</li>
+      <li>You need admin tools for customer support</li>
+      <li>Analytics and monitoring are business-critical</li>
+      <li>You have a team of developers collaborating</li>
+      <li>Scalability and performance are priorities</li>
+      <li>You need enterprise-grade security features</li>
+    </ul>
+  </Card>
+  <Card icon="times">
+    <strong>Consider Small Scale When:</strong>
+    <ul>
+      <li>You're validating a concept or idea</li>
+      <li>Budget for infrastructure is very limited</li>
+      <li>You're working solo on a side project</li>
+      <li>You don't need payment processing yet</li>
+      <li>Admin features can wait for later</li>
+      <li>You want the absolute simplest starting point</li>
+    </ul>
+  </Card>
+</Columns>
+
+## Business-Ready Features
+
+<Card icon="business">
+  <strong>🚀 Launch-Ready from Day One</strong>
+  <p>Medium scale projects include features that businesses actually need:</p>
+  <Columns cols={2}>
+    <div>
+    <h5>Revenue Operations</h5>
+    <ul>
+      <li>Multiple pricing tiers and plans</li>
+      <li>Free trials and promotional offers</li>
+      <li>Customer billing and invoicing</li>
+      <li>Revenue reporting and analytics</li>
+    </ul>
+    </div>
+    <div>
+    <h5>Customer Management</h5>
+    <ul>
+      <li>Customer support tools</li>
+      <li>User onboarding flows</li>
+      <li>Communication and engagement</li>
+      <li>Feedback and feature requests</li>
+    </ul>
+    </div>
+  </Columns>
+</Card>
+
+## Real-World Example
+
+<Card icon="case-study">
+  <strong>Haunting SaaS (Kiroween Demo)</strong>
+  <p>During the Kiroween Hackathon, a team built a complete SaaS platform in hours using SkipSetup's medium scale:</p>
+  <ul>
+    <li>Stripe subscription management with multiple plans</li>
+    <li>Admin dashboard for user and subscription management</li>
+    <li>Monitoring dashboard with real-time analytics</li>
+    <li>Advanced authentication with role-based access</li>
+    <li>Complete AI context system for rapid feature development</li>
+  </ul>
+  <p><a href="/ai/demos/haunting-saas">Watch the demo →</a></p>
+</Card>
+
+## Cost & Infrastructure
+
+<Columns cols={2}>
+  <Card icon="infrastructure">
+    <strong>Production Infrastructure</strong>
+    <p>Medium scale is optimized for production deployment:</p>
+    <ul>
+      <li>PostgreSQL database with backups</li>
+      <li>CDN for static assets</li>
+      <li>Redis for caching and sessions</li>
+      <li>Docker containers for consistency</li>
+      <li>CI/CD pipelines for deployment</li>
+    </ul>
+  </Card>
+  <Card icon="scaling">
+    <strong>Built for Scale</strong>
+    <p>Architecture designed to handle growth:</p>
+    <ul>
+      <li>Database connection pooling</li>
+      <li>Rate limiting and API quotas</li>
+      <li>Caching strategies at multiple levels</li>
+      <li>Background job processing</li>
+      <li>Horizontal scaling capabilities</li>
+    </ul>
+  </Card>
+</Columns>
+
+## Getting Started
+
+<Card
+  title="Create Your SaaS Platform"
+  description="Launch your production-ready application in under 90 seconds"
+  href="/quick-start/installation"
+  icon="rocket"
+  horizontal
+/>
+
+<Note type="success">
+  <strong>Pro Tip:</strong> Medium scale projects come with comprehensive documentation and AI context that makes onboarding new team members and adding features 10x faster.
+</Note>

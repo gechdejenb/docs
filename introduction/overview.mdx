@@ -24,21 +24,16 @@ SkipSetup is the first AI-native project environment. It maintains **perfect, on
 Every SkipSetup project includes a `.kiro` folder that transforms generic AI assistants into project-aware experts:
 
 <Columns cols={2}>
-  <Card
-    title="Specialist Agents"
-    icon="users"
-  >
+  <Card title="Specialist Agents" icon="users">
     <ul>
       <li><strong>auth-expert</strong> – Authentication & security</li>
       <li><strong>database-architect</strong> – Schema design & optimization</li>
       <li><strong>fullstack-specialist</strong> – End-to-end features</li>
       <li><strong>ui-specialist</strong> – Components & design systems</li>
+      <li><strong>payment-integrator</strong> – Stripe payments & billing</li>
     </ul>
   </Card>
-  <Card
-    title="Live Specifications"
-    icon="file-alt"
-  >
+  <Card title="Live Specifications" icon="file-alt">
     <ul>
       <li>API documentation & endpoints</li>
       <li>Authentication flows & rules</li>
@@ -58,3 +53,191 @@ npx skipsetup-cli@latest create my-mvp --size small
 
 # Complete SaaS in <90 seconds
 npx skipsetup-cli@latest create my-saas --size medium
+
+# Navigate to your project
+cd my-saas
+
+# Start Kiro CLI for AI-assisted development
+kiro-cli
+```
+
+### For AI Assistants (Kiro)
+Every project includes a `.kiro` "AI brain" with specialist agents and automated workflows. Use the Kiro CLI to chat with project-aware AI:
+
+```bash
+# Start a general chat session
+kiro-cli
+
+# Or chat with a specific agent
+kiro-cli --agent auth-expert
+```
+
+**Example interaction:**
+```
+You: "add a user profile editor with avatar upload"
+Kiro: "I'll help you implement that. First, let me analyze your current schema..."
+```
+
+### The .kiro Folder Structure
+```
+.kiro/
+├── agents/              # Pre-configured AI specialists
+├── specs/               # Project specifications
+├── steering/           # Architecture documentation
+├── hooks/              # Development automation
+├── mcp/                # AI tool integration
+└── README.md           # Context overview
+```
+
+**The result:** Developers start coding features immediately. AI adds new capabilities—like a subscription dashboard—with zero hallucinations, perfectly integrated on the first try.
+
+## Development Workflow with Kiro CLI
+
+### Interactive Feature Development
+```bash
+# Start your development environment
+pnpm dev
+
+# In another terminal, start Kiro CLI
+kiro-cli --agent fullstack-specialist
+
+# Give direct instructions
+# Example: "add a user profile editor with avatar upload"
+# Kiro will provide complete implementation steps
+```
+
+### Agent-Specific Assistance
+Each agent specializes in different aspects of your project:
+
+<Table>
+  <thead>
+    <tr>
+      <th>Agent</th>
+      <th>Specialty</th>
+      <th>Example Instructions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>auth-expert</strong></td>
+      <td>Authentication & Security</td>
+      <td>"add Google OAuth login"</td>
+    </tr>
+    <tr>
+      <td><strong>database-architect</strong></td>
+      <td>Database Design</td>
+      <td>"add audit logging for user actions"</td>
+    </tr>
+    <tr>
+      <td><strong>fullstack-specialist</strong></td>
+      <td>End-to-End Features</td>
+      <td>"build a user dashboard with metrics"</td>
+    </tr>
+    <tr>
+      <td><strong>ui-specialist</strong></td>
+      <td>User Interface</td>
+      <td>"design a responsive admin panel"</td>
+    </tr>
+    <tr>
+      <td><strong>payment-integrator</strong></td>
+      <td>Payment Systems</td>
+      <td>"add monthly subscription plans"</td>
+    </tr>
+  </tbody>
+</Table>
+
+### Complete Development Flow
+```bash
+# 1. Create your project
+npx skipsetup-cli@latest create my-app --size medium
+
+# 2. Navigate and set up
+cd my-app
+pnpm install
+pnpm db:push
+
+# 3. Start development server
+pnpm dev
+
+# 4. Use Kiro CLI for AI assistance
+kiro-cli --agent database-architect
+# Instruction: "add a user profile editor with avatar upload"
+# Kiro provides step-by-step implementation
+```
+## Benefits of Kiro CLI Integration
+
+<Columns cols={2}>
+  <Card icon="brain">
+    <strong>Zero Hallucinations</strong>
+    <p>Kiro understands your exact project structure, dependencies, and patterns.</p>
+  </Card>
+  <Card icon="rocket">
+    <strong>10x Faster Development</strong>
+    <p>Get context-aware guidance that works on the first try.</p>
+  </Card>
+</Columns>
+
+<Columns cols={2}>
+  <Card icon="users">
+    <strong>Team Consistency</strong>
+    <p>All team members get the same expert guidance.</p>
+  </Card>
+  <Card icon="history">
+    <strong>Project Memory</strong>
+    <p>The .kiro context evolves with your project over time.</p>
+  </Card>
+</Columns>
+
+## Kiro CLI Reference
+
+For complete Kiro CLI documentation and available commands, visit:
+[https://kiro.dev/docs/cli/chat/](https://kiro.dev/docs/cli/chat/)
+
+Basic usage:
+```bash
+kiro-cli                    # Start interactive chat
+kiro-cli --help            # Show help menu
+kiro-cli --agent agentname # Chat with specific agent
+```
+
+<Note type="info">
+  <strong>Note:</strong> Kiro CLI provides interactive chat-based assistance. After starting a session, give direct instructions for what you want to build, and Kiro will guide you through implementation using your project's specific context.
+</Note>
+
+## Real-World Success Story
+
+<Card icon="case-study">
+  <strong>Kiroween Demo: Haunting SaaS</strong>
+  <p>During the Kiroween Hackathon, a team built a complete SaaS platform using SkipSetup and Kiro CLI:</p>
+  
+  ```bash
+  # Generated the complete project
+  npx skipsetup-cli@latest create haunting-saas --size medium
+  
+  # Used Kiro CLI for guided development
+  kiro-cli --agent payment-integrator
+  # Instruction: "add subscription tiers"
+  # Received: Step-by-step Stripe integration
+  
+  kiro-cli --agent ui-specialist
+  # Instruction: "design an admin dashboard"
+  # Received: Complete dashboard implementation
+  ```
+  
+  <p><strong>Result:</strong> Complete, production-ready SaaS platform built in hours with perfect AI guidance.</p>
+  <p><a href="/ai/demos/haunting-saas">Watch the demo →</a></p>
+</Card>
+
+## Getting Started Today
+
+<Card
+  title="Create Your AI-Native Project"
+  description="Experience development where AI understands your project as well as you do"
+  href="/quick-start/installation"
+  icon="rocket"
+  horizontal
+/>
+
+<Note type="success">
+  <strong>All included:</strong> Kiro CLI comes pre-installed in every SkipSetup project. No additional installation required—just start chatting with <code>kiro-cli</code> after project creation.
+</Note>

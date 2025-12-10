@@ -45,8 +45,89 @@ These are the essential commands you'll use daily during development.
       <td>Run ESLint for code quality</td>
       <td>Before commits, CI/CD pipelines</td>
     </tr>
+    <tr>
+      <td><code>kiro-cli</code></td>
+      <td>Start AI-assisted development session</td>
+      <td>Building features, debugging, code review</td>
+    </tr>
   </tbody>
 </Table>
+
+## AI-Assisted Development Commands
+
+SkipSetup projects include Kiro CLI for AI-assisted development with project-aware context.
+
+### Basic Kiro CLI Usage
+
+```bash
+# Start interactive chat session
+kiro-cli
+
+# Chat with a specific AI agent
+kiro-cli --agent auth-expert
+kiro-cli --agent database-architect
+kiro-cli --agent fullstack-specialist
+kiro-cli --agent ui-specialist
+kiro-cli --agent payment-integrator
+```
+
+### Kiro Agent Specializations
+
+<Table>
+  <thead>
+    <tr>
+      <th>Agent</th>
+      <th>Specialization</th>
+      <th>Example Use Cases</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>auth-expert</strong></td>
+      <td>Authentication & Security</td>
+      <td>Adding social login, implementing MFA, securing API endpoints</td>
+    </tr>
+    <tr>
+      <td><strong>database-architect</strong></td>
+      <td>Database Design & Optimization</td>
+      <td>Schema changes, query optimization, migration planning</td>
+    </tr>
+    <tr>
+      <td><strong>fullstack-specialist</strong></td>
+      <td>End-to-End Features</td>
+      <td>Building complete features from UI to database</td>
+    </tr>
+    <tr>
+      <td><strong>ui-specialist</strong></td>
+      <td>User Interface & Design</td>
+      <td>Creating components, responsive layouts, design system updates</td>
+    </tr>
+    <tr>
+      <td><strong>payment-integrator</strong></td>
+      <td>Payment Systems & Billing</td>
+      <td>Stripe integration, subscription logic, billing workflows</td>
+    </tr>
+  </tbody>
+</Table>
+
+### Kiro CLI Examples
+
+```bash
+# Example 1: Get help with database changes
+kiro-cli --agent database-architect
+# You: "add audit logging to the user model"
+# Kiro: Provides Prisma schema changes and migration steps
+
+# Example 2: Build UI components
+kiro-cli --agent ui-specialist
+# You: "create a responsive user profile component"
+# Kiro: Generates React component with Tailwind CSS
+
+# Example 3: Implement complete feature
+kiro-cli --agent fullstack-specialist
+# You: "build a file upload system with S3 storage"
+# Kiro: Provides end-to-end implementation from API to UI
+```
 
 ## Database Commands
 

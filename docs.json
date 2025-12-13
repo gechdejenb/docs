@@ -26,6 +26,7 @@
             "pages": [
               "quick-start/installation",
               "quick-start/create-project",
+              "quick-start/generate-project",
               "quick-start/development-commands"
             ]
           }

@@ -1,0 +1,306 @@
+---
+title: "Generate AI Context for Existing Projects"
+description: "Add AI-assistance to any existing project by generating a .kiro/ directory with specialized agents and context."
+group: "Quick Start"
+position: 3
+---
+
+# Generate AI Context for Existing Projects
+
+SkipSetup's AI Context Generator allows you to add intelligent AI assistance to **any existing project** - whether it's a starter template, downloaded codebase, Expo app, or your own work-in-progress application.
+
+## Why Generate AI Context?
+
+Traditional AI assistants often hallucinate or misunderstand project structure. With `.kiro/` context, your AI tools get:
+
+- **Accurate project understanding** - No more hallucinations about non-existent files
+- **Specialized agents** - Domain experts for auth, database, and fullstack
+- **Complete specifications** - API, components, and database schemas
+- **MCP integration** - Ready for Claude Desktop, Cursor, and other AI tools
+- **Development workflows** - Pre-configured hooks and automation
+
+## Quick Command
+
+```bash
+# Generate .kiro/ for any existing project
+npx @skipsetup/generate@latest generate /path/to/your/project
+
+# Example with popular starters
+npx @skipsetup/generate@latest generate ~/projects/nextjs-starter
+npx @skipsetup/generate@latest generate ~/projects/expo-mobile-app
+npx @skipsetup/generate@latest generate ~/projects/react-vite-app
+```
+
+## Prerequisites
+
+1. **Free Groq API Key** - Get one at [console.groq.com](https://console.groq.com)
+2. **Node.js 18+** - Already installed for most projects
+3. **Existing project** - Any JavaScript/TypeScript project with `package.json`
+
+## Step-by-Step Guide
+
+### Step 1: Download or Choose Your Project
+
+Start with any project you want to work on:
+
+```bash
+# Option A: Create a new Expo app
+npx create-expo-app my-app
+cd my-app
+
+# Option B: Clone a popular starter
+git clone https://github.com/expo/expo-starter my-expo-app
+cd my-expo-app
+
+# Option C: Use an existing project
+cd ~/projects/your-existing-app
+```
+
+### Step 2: Set Your API Key
+
+```bash
+# Linux/Mac
+export GROQ_API_KEY=your_groq_api_key_here
+
+# Windows (Command Prompt)
+set GROQ_API_KEY=your_groq_api_key_here
+
+# Windows (PowerShell)
+$env:GROQ_API_KEY="your_groq_api_key_here"
+
+# Or use inline for one command
+GROQ_API_KEY=your_key npx @skipsetup/generate@latest generate .
+```
+
+### Step 3: Generate AI Context
+
+```bash
+# From inside your project
+npx @skipsetup/generate@latest generate .
+
+# Or from anywhere
+npx @skipsetup/generate@latest generate ~/projects/your-app
+```
+
+### Step 4: Explore and Use Your .kiro/ Directory
+
+After generation, explore what was created:
+
+```bash
+# Navigate to the generated directory
+cd .kiro
+
+# View the complete structure
+tree .kiro/
+```
+
+You'll see:
+```
+.kiro/
+├── agents
+│   ├── auth-expert.json
+│   ├── database-architect.json
+│   └── fullstack-specialist.json
+├── hooks
+│   ├── post-generation.json
+│   ├── post-generation.sh
+│   ├── pre-commit.json
+│   ├── pre-commit.sh
+│   ├── pre-deploy.json
+│   ├── pre-deploy.sh
+│   ├── README.md
+│   ├── schema-validation.json
+│   └── schema-validation.sh
+├── mcp
+│   ├── mcp-config.json
+│   └── README.md
+├── specs
+│   ├── api-specifications.md
+│   ├── component-specifications.md
+│   ├── database-specifications.md
+│   └── README.md
+└── steering
+    ├── architecture-documentation.md
+    ├── development-workflows.md
+    ├── MASTER_INDEX.md
+    ├── plugin-intelligence.md
+    └── project-blueprint.md
+```
+
+## Using the Generated kiro-cli
+
+Once you have `.kiro/`, use the included CLI to interact with your AI context:
+
+```bash
+# Navigate to .kiro directory
+cd .kiro
+
+# Use a specific agent for tasks
+./kiro-cli --agent fullstack-specialist "How do I add a new screen to this Expo app?"
+
+```
+
+## What You'll See
+
+```
+$ npx @skipsetup/generate@latest generate ~/projects/my-expo-app
+
+Discovery complete in 4790ms
+AI analysis complete
+
+Patterns Found: 22
+Relationships: 15
+Recommendations: 13
+Confidence: 95%
+
+Specialized Agents Created:
+• auth-expert - Authentication & Authorization specialist
+• database-architect - Database schema & query specialist
+• fullstack-specialist - Complete fullstack development
+
+Generated .kiro/ directory with AI-ready context!
+```
+
+## Real-World Examples
+
+### Example 1: Adding AI to an Expo App
+
+```bash
+# 1. Create an Expo app (or use existing)
+npx create-expo-app my-expo-app
+cd my-expo-app
+
+# 2. Generate AI context
+export GROQ_API_KEY=your_key
+npx @skipsetup/generate@latest generate .
+
+# 3. Use kiro-cli for AI assistance
+cd .kiro
+./kiro-cli --agent fullstack-specialist "How do I add navigation to this app?"
+
+```
+
+### Example 2: Enhancing an Existing React Native Project
+
+```bash
+# 1. Navigate to your existing React Native project
+cd ~/projects/your-react-native-app
+
+# 2. Generate context for AI assistance
+export GROQ_API_KEY=your_key
+npx @skipsetup/generate@latest generate .
+
+# 3. Ask specific questions about your codebase
+cd .kiro
+./kiro-cli --agent auth-expert "What authentication method is used here?"
+./kiro-cli --agent database-architect "Show me the database schema"
+```
+
+### Example 3: Team Onboarding with .kiro/
+
+```bash
+# 1. Generate .kiro/ for your team project
+cd ~/projects/team-expo-app
+npx @skipsetup/generate@latest generate .
+
+# 2. Commit .kiro/ to version control
+git add .kiro/
+git commit -m "Add AI context for team onboarding"
+
+```
+
+## Generated AI Agents
+
+Your project gets three specialized AI agents:
+
+### 1. **Authentication Expert**
+- Knows your auth library (Expo Secure Store, Firebase, Supabase, etc.)
+- Understands your authentication flow
+- Can implement secure auth features for mobile/web
+- Follows your project's security patterns
+
+### 2. **Database Architect**
+- Analyzes your database schema (SQLite, WatermelonDB, etc.)
+- Understands relationships and migrations
+- Can write optimized queries for mobile performance
+- Knows your data layer patterns
+
+### 3. **Fullstack Specialist**
+- Complete understanding of your entire stack (Expo, React Native, etc.)
+- Knows all components, screens, and navigation
+- Can implement features end-to-end
+- Follows your coding patterns and conventions
+
+## Project Compatibility
+
+Works with virtually any JavaScript/TypeScript project:
+
+| Framework/Tool | Compatibility | Notes |
+|----------------|---------------|-------|
+| **Expo/React Native** | ✅ Excellent | Full mobile pattern detection |
+| **Next.js** | ✅ Excellent | Full web pattern detection |
+| **React** | ✅ Great | Component and hook analysis |
+| **Vite** | ✅ Great | Build tool detection |
+| **Node.js** | ✅ Good | API and server analysis |
+| **Express** | ✅ Good | Route detection |
+| **Vue/Nuxt** | ⚠️ Limited | Basic structure detection |
+| **Angular** | ⚠️ Limited | Basic structure detection |
+| **Svelte** | ⚠️ Limited | Basic structure detection |
+
+## Common Workflows
+
+### Workflow 1: Expo App Development with AI
+```bash
+# 1. Start with Expo
+npx create-expo-app my-app
+cd my-app
+
+# 2. Make it AI-ready
+npx @skipsetup/generate@latest generate .
+
+# 3. Develop with AI assistance
+cd .kiro
+./kiro-cli --agent fullstack-specialist "Add a login screen with biometric auth"
+```
+
+### Workflow 2: Debugging with Context-Aware AI
+```bash
+# 1. Generate context for problematic project
+cd ~/projects/buggy-app
+npx @skipsetup/generate@latest generate .
+
+# 2. Use specific agents for debugging
+cd .kiro
+./kiro-cli --agent database-architect "Why is this query slow?"
+./kiro-cli --agent auth-expert "Fix the token refresh issue"
+```
+
+### Workflow 3: Code Review and Refactoring
+```bash
+# 1. Generate context before refactoring
+cd ~/projects/legacy-app
+npx @skipsetup/generate@latest generate .
+
+# 2. Get AI-guided refactoring suggestions
+cd .kiro
+./kiro-cli --agent fullstack-specialist "How can I modernize this screen component?"
+```
+
+## kiro-cli Commands Reference
+
+Refer https://kiro.dev/docs/cli/
+
+
+
+```bash
+# Generate context for any project
+export GROQ_API_KEY=your_key
+npx @skipsetup/generate@latest generate /path/to/project
+
+# Navigate and use kiro-cli
+cd .kiro
+kiro-cli --agent fullstack-specialist "Help me understand this codebase"
+
+```
+
+---
